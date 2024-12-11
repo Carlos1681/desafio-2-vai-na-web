@@ -8,7 +8,6 @@
 header {
   display: flex;
   justify-content: space-between;
-  border: solid;
   height: 15vh;
   padding: 2%;
 }
@@ -34,8 +33,9 @@ header ul button {
 
 .porto-logistica-container {
   background-image: url("./images/background.png");
-  background-size: cover;
-  height: 100vh;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -66,21 +66,28 @@ header ul button {
 
 .gestao-container {
   display: flex;
-  height: 120vh;
+  height: 140vh;
 }
 .gestao-container img {
-  width: 40vw;
-  height: 80vh;
-  align-items: center;
-  margin: 5%;
+  width: 60vw;
+  height: 100vh;
+  margin-right: 1rem;
+  margin-top: 5rem;
 }
 .gestao-container .text-gestao {
   display: flex;
   flex-direction: column;
   width: 40vw;
   height: 80vh;
-  margin: 5%;
+  margin: 8%;
   justify-content: space-evenly;
+}
+.gestao-container .text-gestao h4 {
+  color: #0017e9;
+}
+.gestao-container .text-gestao a {
+  color: #0017e9;
+  text-decoration: none;
 }
 
 .solucoes-container {
