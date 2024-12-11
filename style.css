@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: solid;
+  height: 15vh;
+  padding: 2%;
+}
+header h2 {
+  margin-left: 3rem;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+  list-style: none;
+}
+header ul a {
+  color: #5b5b5b;
+  text-decoration: none;
+}
+header ul button {
+  background-color: #fff;
+  height: 6vh;
+  width: 5vw;
+  margin-top: -1rem;
+}
+
+.porto-logistica-container {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.porto-logistica-container .text-logistica {
+  color: #fff;
+  margin-top: 10%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+  height: 40vh;
+  width: 50vw;
+}
+.porto-logistica-container .text-logistica h1 {
+  font-size: 5rem;
+}
+.porto-logistica-container .text-logistica p {
+  font-size: 1.5rem;
+}
+.porto-logistica-container .text-logistica button {
+  width: 12vw;
+  height: 6vh;
+  margin-left: 4%;
+  margin-top: 3%;
+  font-size: 1rem;
+}
+
+.gestao-container {
+  display: flex;
+  height: 120vh;
+}
+.gestao-container img {
+  width: 40vw;
+  height: 80vh;
+  align-items: center;
+  margin: 5%;
+}
+.gestao-container .text-gestao {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 80vh;
+  margin: 5%;
+  justify-content: space-evenly;
+}
+
+.solucoes-container {
+  background-color: #d8d8d8;
+  height: 85vh;
+  padding: 2%;
+}
+.solucoes-container h4 {
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+.solucoes-container .articles {
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.solucoes-container .articles article {
+  width: 18vw;
+  height: 50vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.solucoes-container .articles img {
+  width: 100%;
+  height: 50%;
+}
+.solucoes-container .articles p {
+  margin: 6%;
+}
+
+.contato-container {
+  display: flex;
+  margin-top: 3.5rem;
+}
+.contato-container .locais h3,
+.contato-container .locais h4 {
+  margin-left: 2rem;
+}
+.contato-container .contato h3,
+.contato-container .contato h4 {
+  margin-left: 2.9rem;
+}
+.contato-container .figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+  width: 50vw;
+}
+.contato-container .figures img {
+  width: 80%;
+  height: 80%;
+}
+.contato-container form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 1.4rem;
+  width: 30vw;
+  height: 70vh;
+}
+.contato-container form input {
+  margin-bottom: 1.5rem;
+  height: 10vh;
+}
+.contato-container form label {
+  margin-top: 0.5rem;
+}
+.contato-container form textarea {
+  margin-bottom: 2rem;
+  height: 20vh;
+}
+.contato-container form button {
+  height: 15vh;
+}
+
+section button {
+  background-color: #0017e9;
+  color: #fff;
+}
+
+footer {
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}/*# sourceMappingURL=style.css.map */
