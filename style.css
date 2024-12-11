@@ -4,12 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+* button:hover {
+  cursor: pointer;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   height: 15vh;
   padding: 2%;
+  font-family: Oswald, sans-serif;
 }
 header h2 {
   margin-left: 3rem;
@@ -26,19 +30,27 @@ header ul a {
 }
 header ul button {
   background-color: #fff;
-  height: 6vh;
-  width: 5vw;
+  height: 8vh;
+  width: 8vw;
   margin-top: -1rem;
+  font-family: Oswald, sans-serif;
+}
+
+section button {
+  background-color: #0017e9;
+  color: #fff;
+  border: none;
 }
 
 .porto-logistica-container {
-  background-image: url("./images/background.png");
-  background-size: auto;
+  background-image: url("./background (1).png");
+  background-size: 100% 80%;
   background-repeat: no-repeat;
-  height: 130vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: Oswald, sans-serif;
 }
 .porto-logistica-container .text-logistica {
   color: #fff;
@@ -57,11 +69,12 @@ header ul button {
   font-size: 1.5rem;
 }
 .porto-logistica-container .text-logistica button {
-  width: 12vw;
-  height: 6vh;
-  margin-left: 4%;
+  width: 14vw;
+  height: 7vh;
+  margin-left: 3.5%;
   margin-top: 3%;
   font-size: 1rem;
+  font-family: Oswald, sans-serif;
 }
 
 .gestao-container {
@@ -69,8 +82,8 @@ header ul button {
   height: 140vh;
 }
 .gestao-container img {
-  width: 60vw;
-  height: 100vh;
+  width: 45vw;
+  height: 110vh;
   margin-right: 1rem;
   margin-top: 5rem;
 }
@@ -80,10 +93,21 @@ header ul button {
   width: 40vw;
   height: 80vh;
   margin: 8%;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  font-family: Roboto, sans-serif;
 }
 .gestao-container .text-gestao h4 {
   color: #0017e9;
+  font-family: Oswald, sans-serif;
+  font-size: 1.25rem;
+}
+.gestao-container .text-gestao h3 {
+  font-size: 2.5rem;
+  text-align: start;
+}
+.gestao-container .text-gestao p {
+  text-align: start;
+  font-size: 1.15rem;
 }
 .gestao-container .text-gestao a {
   color: #0017e9;
@@ -92,13 +116,18 @@ header ul button {
 
 .solucoes-container {
   background-color: #d8d8d8;
-  height: 85vh;
+  height: 120vh;
   padding: 2%;
+  font-family: Oswald, sans-serif;
 }
 .solucoes-container h4 {
   margin-bottom: 2%;
   display: flex;
   justify-content: center;
+  font-size: 1.25rem;
+}
+.solucoes-container #text-solucoes {
+  color: #0017e9;
 }
 .solucoes-container .articles {
   background-color: #d8d8d8;
@@ -109,12 +138,15 @@ header ul button {
 }
 .solucoes-container .articles article {
   width: 18vw;
-  height: 50vh;
+  height: 55vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   text-align: start;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.solucoes-container .articles article #article-title {
+  font-weight: 500;
 }
 .solucoes-container .articles img {
   width: 100%;
@@ -126,11 +158,31 @@ header ul button {
 
 .contato-container {
   display: flex;
-  margin-top: 3.5rem;
+  font-family: Oswald, sans-serif;
+  height: 120vh;
+  margin-top: 3rem;
+}
+.contato-container h3 {
+  color: #0017e9;
+  font-size: 2rem;
+}
+.contato-container h4 {
+  font-size: 1.25rem;
+}
+.contato-container .locais {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .contato-container .locais h3,
 .contato-container .locais h4 {
   margin-left: 2rem;
+}
+.contato-container .contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 .contato-container .contato h3,
 .contato-container .contato h4 {
@@ -146,6 +198,9 @@ header ul button {
 .contato-container .figures img {
   width: 80%;
   height: 80%;
+}
+.contato-container .figures figcaption {
+  font-weight: 500;
 }
 .contato-container form {
   display: flex;
@@ -170,15 +225,12 @@ header ul button {
   height: 15vh;
 }
 
-section button {
-  background-color: #0017e9;
-  color: #fff;
-}
-
 footer {
   background-color: #d8d8d8;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

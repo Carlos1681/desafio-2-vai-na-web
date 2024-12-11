@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  button:hover {
+    cursor: pointer;
+  }
 }
 
 header {
@@ -11,6 +15,8 @@ header {
   justify-content: space-between;
   height: 15vh;
   padding: 2%;
+
+  font-family: Oswald, sans-serif;
 
   h2 {
     margin-left: 3rem;
@@ -29,21 +35,31 @@ header {
 
     button {
       background-color: #fff;
-      height: 6vh;
-      width: 5vw;
+      height: 8vh;
+      width: 8vw;
       margin-top: -1rem;
+      font-family: Oswald, sans-serif;
     }
   }
 }
 
+section {
+  button {
+    background-color: #0017e9;
+    color: #fff;
+    border: none;
+  }
+}
+
 .porto-logistica-container {
-  background-image: url("./images/background.png");
-  background-size: auto;
+  background-image: url("./background\ \(1\).png");
+  background-size: 100% 80%;
   background-repeat: no-repeat;
-  height: 130vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: Oswald, sans-serif;
 
   .text-logistica {
     color: #fff;
@@ -64,11 +80,12 @@ header {
     }
 
     button {
-      width: 12vw;
-      height: 6vh;
-      margin-left: 4%;
+      width: 14vw;
+      height: 7vh;
+      margin-left: 3.5%;
       margin-top: 3%;
       font-size: 1rem;
+      font-family: Oswald, sans-serif;
     }
   }
 }
@@ -77,8 +94,8 @@ header {
   display: flex;
   height: 140vh;
   img {
-    width: 60vw;
-    height: 100vh;
+    width: 45vw;
+    height: 110vh;
     margin-right: 1rem;
     margin-top: 5rem;
   }
@@ -88,10 +105,23 @@ header {
     width: 40vw;
     height: 80vh;
     margin: 8%;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
 
     h4 {
       color: #0017e9;
+      font-family: Oswald, sans-serif;
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      text-align: start;
+    }
+
+    p {
+      text-align: start;
+      font-size: 1.15rem;
     }
 
     a {
@@ -103,13 +133,19 @@ header {
 
 .solucoes-container {
   background-color: #d8d8d8;
-  height: 85vh;
+  height: 120vh;
   padding: 2%;
+  font-family: Oswald, sans-serif;
 
   h4 {
     margin-bottom: 2%;
     display: flex;
     justify-content: center;
+    font-size: 1.25rem;
+  }
+
+  #text-solucoes {
+    color: #0017e9;
   }
   .articles {
     background-color: #d8d8d8;
@@ -119,12 +155,16 @@ header {
     margin-top: 5%;
     article {
       width: 18vw;
-      height: 50vh;
+      height: 55vh;
       background-color: #fff;
       display: flex;
       flex-direction: column;
       text-align: start;
       box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+      #article-title {
+        font-weight: 500;
+      }
     }
 
     img {
@@ -140,9 +180,23 @@ header {
 
 .contato-container {
   display: flex;
-  margin-top: 3.5rem;
+  font-family: Oswald, sans-serif;
+  height: 120vh;
+  margin-top: 3rem;
+
+  h3 {
+    color: #0017e9;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
 
   .locais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     h3,
     h4 {
       margin-left: 2rem;
@@ -150,6 +204,10 @@ header {
   }
 
   .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
     h3,
     h4 {
       margin-left: 2.9rem;
@@ -165,6 +223,10 @@ header {
     img {
       width: 80%;
       height: 80%;
+    }
+
+    figcaption {
+      font-weight: 500;
     }
   }
 
@@ -195,17 +257,12 @@ header {
   }
 }
 
-section {
-  button {
-    background-color: #0017e9;
-    color: #fff;
-  }
-}
-
 footer {
   background-color: #d8d8d8;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
 }
