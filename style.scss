@@ -52,7 +52,7 @@ section {
 }
 
 .porto-logistica-container {
-  background-image: url("./background\ \(1\).png");
+  background-image: url("./images/background.png");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   height: 110vh;
@@ -251,6 +251,11 @@ section {
       height: 20vh;
     }
 
+    input,
+    textarea {
+      border: solid 0.1rem;
+    }
+
     button {
       height: 15vh;
     }
@@ -265,4 +270,203 @@ footer {
   height: 10vh;
   font-family: Oswald, sans-serif;
   font-weight: 700;
+}
+
+@media screen and (min-width: 201px) and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+
+    h2 {
+      display: none;
+    }
+
+    ul {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      margin-left: 14.25rem;
+      font-size: 1.25rem;
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .porto-logistica-container {
+    background-size: cover;
+    height: auto;
+    padding: 2rem 0;
+
+    .text-logistica {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      button {
+        width: 8rem;
+        height: 3rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+      }
+    }
+    > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .gestao-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    img {
+      width: 80%;
+      height: 80%;
+      margin-top: -0.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .text-gestao {
+      width: 90%;
+      margin: 1rem 1rem;
+      height: auto;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      a {
+        font-size: 1.5rem;
+      }
+      > * {
+        margin-bottom: 2rem;
+      }
+    }
+    > * {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .solucoes-container {
+    height: auto;
+    padding: 2rem 1rem;
+
+    .articles {
+      flex-direction: column;
+      align-items: center;
+
+      article {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+      }
+    }
+    > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .contato-container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+
+    .locais {
+      margin-bottom: 2rem;
+
+      h3 {
+        margin-left: 10rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        margin-left: 9.75rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .contato {
+      margin-bottom: 2rem;
+
+      h3 {
+        margin-left: 12.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        margin-left: 7rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .figures {
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: 1rem auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    form {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      align-items: center;
+
+      input,
+      textarea,
+      button {
+        width: 60%;
+      }
+      input,
+      textarea {
+        margin-bottom: 1rem;
+        height: auto;
+        padding: 0.5rem;
+        border: solid 0.1rem;
+      }
+
+      label {
+        align-self: flex-start;
+        margin-left: 6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        height: 7vh;
+      }
+    }
+    > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  footer {
+    height: 6vh;
+    font-size: 14px;
+  }
 }

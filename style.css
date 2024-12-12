@@ -43,7 +43,7 @@ section button {
 }
 
 .porto-logistica-container {
-  background-image: url("./background (1).png");
+  background-image: url("./images/background.png");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   height: 110vh;
@@ -221,6 +221,10 @@ section button {
   margin-bottom: 2rem;
   height: 20vh;
 }
+.contato-container form input,
+.contato-container form textarea {
+  border: solid 0.1rem;
+}
 .contato-container form button {
   height: 15vh;
 }
@@ -233,4 +237,173 @@ footer {
   height: 10vh;
   font-family: Oswald, sans-serif;
   font-weight: 700;
+}
+
+@media screen and (min-width: 201px) and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  header h2 {
+    display: none;
+  }
+  header ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 14.25rem;
+    font-size: 1.25rem;
+  }
+  header ul button {
+    display: none;
+  }
+  .porto-logistica-container {
+    background-size: cover;
+    height: auto;
+    padding: 2rem 0;
+  }
+  .porto-logistica-container .text-logistica {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .porto-logistica-container .text-logistica h1 {
+    font-size: 3rem;
+  }
+  .porto-logistica-container .text-logistica p {
+    font-size: 1.2rem;
+  }
+  .porto-logistica-container .text-logistica button {
+    width: 8rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+  }
+  .porto-logistica-container > * {
+    margin-bottom: 1.5rem;
+  }
+  .gestao-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .gestao-container img {
+    width: 80%;
+    height: 80%;
+    margin-top: -0.5rem;
+    margin-bottom: 4rem;
+  }
+  .gestao-container .text-gestao {
+    width: 90%;
+    margin: 1rem 1rem;
+    height: auto;
+  }
+  .gestao-container .text-gestao h3 {
+    font-size: 2rem;
+  }
+  .gestao-container .text-gestao p {
+    font-size: 1.25rem;
+  }
+  .gestao-container .text-gestao a {
+    font-size: 1.5rem;
+  }
+  .gestao-container .text-gestao > * {
+    margin-bottom: 2rem;
+  }
+  .gestao-container > * {
+    margin-bottom: 2rem;
+  }
+  .solucoes-container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .solucoes-container .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .solucoes-container .articles article {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .solucoes-container > * {
+    margin-bottom: 1.5rem;
+  }
+  .contato-container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .contato-container .locais {
+    margin-bottom: 2rem;
+  }
+  .contato-container .locais h3 {
+    margin-left: 10rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .contato-container .locais h4 {
+    margin-left: 9.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contato-container .contato {
+    margin-bottom: 2rem;
+  }
+  .contato-container .contato h3 {
+    margin-left: 12.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .contato-container .contato h4 {
+    margin-left: 7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contato-container .figures {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .contato-container .figures img {
+    width: 100%;
+    height: auto;
+  }
+  .contato-container form {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+  }
+  .contato-container form input,
+  .contato-container form textarea,
+  .contato-container form button {
+    width: 60%;
+  }
+  .contato-container form input,
+  .contato-container form textarea {
+    margin-bottom: 1rem;
+    height: auto;
+    padding: 0.5rem;
+    border: solid 0.1rem;
+  }
+  .contato-container form label {
+    align-self: flex-start;
+    margin-left: 6rem;
+    margin-bottom: 0.5rem;
+  }
+  .contato-container form button {
+    height: 7vh;
+  }
+  .contato-container > * {
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    height: 6vh;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
