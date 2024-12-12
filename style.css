@@ -129,14 +129,14 @@ section button {
 .solucoes-container #text-solucoes {
   color: #0017e9;
 }
-.solucoes-container .articles {
+.solucoes-container article {
   background-color: #d8d8d8;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5%;
 }
-.solucoes-container .articles article {
+.solucoes-container article .articles {
   width: 18vw;
   height: 55vh;
   background-color: #fff;
@@ -145,14 +145,14 @@ section button {
   text-align: start;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-.solucoes-container .articles article #article-title {
+.solucoes-container article .articles #article-title {
   font-weight: 500;
 }
-.solucoes-container .articles img {
+.solucoes-container article img {
   width: 100%;
   height: 50%;
 }
-.solucoes-container .articles p {
+.solucoes-container article p {
   margin: 6%;
 }
 
@@ -244,6 +244,7 @@ footer {
     flex-direction: column;
     height: auto;
     padding: 1rem;
+    align-items: center;
   }
   header h2 {
     display: none;
@@ -252,8 +253,8 @@ footer {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    margin-left: 14.25rem;
     font-size: 1.25rem;
+    justify-content: space-evenly;
   }
   header ul button {
     display: none;
@@ -320,11 +321,11 @@ footer {
     height: auto;
     padding: 2rem 1rem;
   }
-  .solucoes-container .articles {
+  .solucoes-container article {
     flex-direction: column;
     align-items: center;
   }
-  .solucoes-container .articles article {
+  .solucoes-container article .articles {
     width: 90%;
     height: auto;
     margin-bottom: 1.5rem;
@@ -339,28 +340,28 @@ footer {
     margin-top: 2rem;
   }
   .contato-container .locais {
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    align-items: center;
   }
   .contato-container .locais h3 {
-    margin-left: 10rem;
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
   .contato-container .locais h4 {
-    margin-left: 9.75rem;
     font-size: 1rem;
     margin-bottom: 1rem;
   }
   .contato-container .contato {
     margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
   }
   .contato-container .contato h3 {
-    margin-left: 12.5rem;
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
   .contato-container .contato h4 {
-    margin-left: 7rem;
     font-size: 1rem;
     margin-bottom: 1rem;
   }
@@ -377,7 +378,7 @@ footer {
     width: 90%;
     margin: 0 auto;
     height: auto;
-    align-items: center;
+    margin-left: 6.5rem;
   }
   .contato-container form input,
   .contato-container form textarea,
@@ -393,7 +394,6 @@ footer {
   }
   .contato-container form label {
     align-self: flex-start;
-    margin-left: 6rem;
     margin-bottom: 0.5rem;
   }
   .contato-container form button {
